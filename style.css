@@ -106,7 +106,7 @@ section {
 
 @media (max-width: 450px) {
     .container {
-        margin: 70px auto;
+        margin: 18vw auto;
         width: 300px;
     }
     h1 {
