@@ -3,6 +3,7 @@ const select = document.getElementById("currency-select")
 
 const dolar = 5.2
 const euro = 5.9
+const bitcoin = 103400;
 
 const convertValues = () => {
     const inputReais = document.getElementById("input-real").value
@@ -26,6 +27,11 @@ const convertValues = () => {
         { style: "currency", currency: "EUR" }
     ).format(inputReais / euro)
     }
+    if(select.value === "Bitcoin") {
+        currencyValueText.innerHTML  = new Intl.NumberFormat('de-DE',
+        { style: 'currency', currency: 'XBT' }
+        ).format(inputReais / bitcoin)
+    }
 }
 
 const changeCurrency = () => {
@@ -40,7 +46,10 @@ const changeCurrency = () => {
         currencyName.innerHTML = 'Euro'
         currencyImg.src = "./assets/euro.png"
     }
-    console.log(select.value)
+    if(select.value === "Bitcoin") {
+        currencyName.innerHTML = 'Bitcoin'
+        currencyImg.src = "./assets/bitcoin.png"
+    }
 
     convertValues()
 }
