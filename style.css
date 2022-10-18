@@ -13,7 +13,7 @@ body {
 .container {
     background: #F4F4F4;
     margin: 100px auto;
-    width: 375px;
+    width: 600px;
 }
 header {
     background: #1B83E2;
@@ -29,6 +29,7 @@ h1 {
 }
 main {
     padding: 22px;
+    display: flex;
 }
 label {
     font-size: 15px;
@@ -78,9 +79,9 @@ button:hover {
 button:active {
     opacity: 0.7;
 }
-
 section {
-    width: 100%;
+    width: 50%;
+    margin-left: 20px;
     border: 1px solid #1B83E2;
     border-radius: 6px;
 }
@@ -104,9 +105,24 @@ section {
     margin: 15px auto;
 }
 
+@media (max-width: 650px) {
+    .container {
+        width: 375px;
+    }
+    main {
+        display: block;
+    }
+    section {
+        width: 100%;
+        border: 1px solid #1B83E2;
+        border-radius: 6px;
+        margin: 0;
+    }
+}
+
 @media (max-width: 450px) {
     .container {
-        margin: 18vw auto;
+        margin: 17vw auto;
         width: 300px;
     }
     h1 {
