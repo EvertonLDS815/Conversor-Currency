@@ -8,8 +8,10 @@
 </ul>
 
 <h2>Desktop</h2>
-<img src="./redme/desktop.png" width="700">
+<img src="./assets/desktop.png" width="900">
 
 <h2>Mobile</h2>
-<img src="./assets/mob.jpeg" width="340">
-<img src="./assets/mob2.jpeg" width="340">
+<div>
+<img src="./assets/mob.jpeg" height="500">
+<img src="./assets/mob2.jpeg" height="500">
+</div>
